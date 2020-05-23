@@ -4,6 +4,9 @@
     <thead>
         <tr>
             <th>
+                id
+            </th>
+            <th>
                 Title
             </th>
             <th>
@@ -18,13 +21,17 @@
         <% @articles.each do |article| %>
             <tr>
                 <td>
+                    <%= article.id %>
+                </td>
+                <td>
                     <%= article.title %> 
                 </td>
                 <td>
                     <%= article.description %>
                 </td>
                 <td>
-                
+                    Edit
+                    Destroy
                 </td>
             </tr>
         <% end %>
